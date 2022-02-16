@@ -43,9 +43,19 @@
 // arr([1, 2, 3, 4, 5, 6, 7, 8, 9]);
 // console.log("Sum of array", add);
 
-var obj = {
-  name: "Priya",
-  age: 20,
-};
-console.log(obj);
-console.log(obj.hasOwnProperty("name"));
+// prime numbers in an Array
+
+(function (primeNum) {
+  for (let i = 0; i < primeNum.length; i++) {
+    let flag = 0;
+    for (let j = 2; j < primeNum[i]; j++) {
+      if (primeNum[i] % j == 0) {
+        flag = 1;
+        break;
+      }
+    }
+    if (flag == 0) {
+      console.log("Prime number =", primeNum[i]);
+    }
+  }
+})([1, 2, 3, 4, 5, 6, 7, 8, 9]);
