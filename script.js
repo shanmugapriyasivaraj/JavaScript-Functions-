@@ -43,9 +43,26 @@
 // arr([1, 2, 3, 4, 5, 6, 7, 8, 9]);
 // console.log("Sum of array", add);
 
-// prime numbers in an Array
+// prime numbers in an Array  [IIFE]
 
-(function (primeNum) {
+// (function (primeNum) {
+//   for (let i = 0; i < primeNum.length; i++) {
+//     let flag = 0;
+//     for (let j = 2; j < primeNum[i]; j++) {
+//       if (primeNum[i] % j == 0) {
+//         flag = 1;
+//         break;
+//       }
+//     }
+//     if (flag == 0) {
+//       console.log("Prime number =", primeNum[i]);
+//     }
+//   }
+// })([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+
+// anonymous function
+
+let prime = function (primeNum) {
   for (let i = 0; i < primeNum.length; i++) {
     let flag = 0;
     for (let j = 2; j < primeNum[i]; j++) {
@@ -55,7 +72,8 @@
       }
     }
     if (flag == 0) {
-      console.log("Prime number =", primeNum[i]);
+      console.log("prime Number:", primeNum[i]);
     }
   }
-})([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+};
+prime([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
