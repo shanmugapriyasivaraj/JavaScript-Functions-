@@ -24,21 +24,28 @@
 
 // IIFE Function
 
-let arrAdd = 0;
-(function (arr) {
-  arr.forEach((odd) => {
-    arrAdd = arrAdd + odd;
-  });
-})([1, 2, 3, 4, 5, 6, 7, 8, 9]);
-console.log("Sum of array:", arrAdd);
+// let arrAdd = 0;
+// (function (arr) {
+//   arr.forEach((odd) => {
+//     arrAdd = arrAdd + odd;
+//   });
+// })([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+// console.log("Sum of array:", arrAdd);
 
 // Anonymous Function
 
-let add = 0;
-let arr = function (odd) {
-  odd.forEach((key) => {
-    add = add + key;
-  });
+// let add = 0;
+// let arr = function (odd) {
+//   odd.forEach((key) => {
+//     add = add + key;
+//   });
+// };
+// arr([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+// console.log("Sum of array", add);
+
+var obj = {
+  name: "Priya",
+  age: 20,
 };
-arr([1, 2, 3, 4, 5, 6, 7, 8, 9]);
-console.log("Sum of array", add);
+console.log(obj);
+console.log(obj.hasOwnProperty("name"));
