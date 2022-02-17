@@ -84,15 +84,35 @@
 // };
 // prime([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
-function addFive(num) {
-  return console.log("params:", num + 5);
-}
-addFive(5);
-addFive(0);
-addFive(-5); //argument
+// function addFive(num) {
+//   return console.log("params:", num + 5);
+// }
+// addFive(5);
+// addFive(0);
+// addFive(-5); //argument
 
 // var num = 10;
 // function addFive(value) {
 //   return num;
 // }
 // var result = addFive(num);
+
+// Funcion
+
+function functionName(parameter) {
+  // function body
+}
+functionName();
+
+function square(number) {
+  return number * number;
+}
+let number = square(7);
+console.log(number);
+
+function add(x, y) {
+  return x + y;
+}
+let x = 5;
+let y = 7;
+console.log(x + y);
