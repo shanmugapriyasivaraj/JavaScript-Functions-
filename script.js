@@ -244,12 +244,20 @@
 // getLengthOfWord("length");
 // getLengthOfWord("9");
 
-function isSameLength(word1, word2) {
-  if (word1.length === word2.length) {
-    return true;
-  } else {
-    return false;
-  }
+// function isSameLength(word1, word2) {
+//   if (word1.length === word2.length) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log("Is Same Length:", isSameLength("hello", "world"));
+// console.log("Is Same Length:", isSameLength("priya", "anu"));
+
+// d=√[(x2-x1)^2+(y2-y1)^2]
+
+function distance(x1, x2, y1, y2) {
+  let distance = Math.sqrt(x2 - x1) + Math.sqrt(y2 - y1);
+  console.log("Distance:", distance);
 }
-console.log("Is Same Length:", isSameLength("hello", "world"));
-console.log("Is Same Length:", isSameLength("priya", "anu"));
+distance(100, 200, 300, 400); //20
