@@ -147,8 +147,15 @@
 // increment(-3);
 // increment(105);
 
-function getFirstElement(array) {
-  return console.log("First Element:", array[0]);
+// function getFirstElement(array) {
+//   return console.log("First Element:", array[0]);
+// }
+// getFirstElement([1, 2, 3, 4, 5]);
+// getFirstElement([58, 5246, 85]);
+
+function hourToSec(hour) {
+  return console.log("ToSeconds =", hour * 3600);
 }
-getFirstElement([1, 2, 3, 4, 5]);
-getFirstElement([58, 5246, 85]);
+hourToSec(5);
+hourToSec(10);
+hourToSec(2);
