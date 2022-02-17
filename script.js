@@ -166,12 +166,20 @@
 // perimeter(5, 6);
 // perimeter(7, 8);
 
-function value(number1, number2) {
-  if (number1 + number2 < 100) {
-    return true;
-  } else {
-    return false;
-  }
+// function value(number1, number2) {
+//   if (number1 + number2 < 100) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(value(50, 80));
+// console.log(value(20, 30));
+
+function remainder(number1, number2) {
+  let remainderValue = number1 % number2;
+  return console.log("Remainder:", remainderValue);
 }
-console.log(value(50, 80));
-console.log(value(20, 30));
+remainder(25, 7);
+remainder(85, 3);
+remainder(58, 8);
