@@ -68,7 +68,7 @@
 
 // prime();
 
-// let prime = function prime (primeNum) {
+// let prime = function  (primeNum) {
 //   for (let i = 0; i < primeNum.length; i++) {
 //     let flag = 0;
 //     for (let j = 2; j < primeNum[i]; j++) {
@@ -99,20 +99,28 @@
 
 // Funcion
 
-function functionName(parameter) {
-  // function body
-}
-functionName();
+// function functionName(parameter) {
+//   // function body
+// }
+// functionName();
 
-function square(number) {
-  return number * number;
-}
-let number = square(7);
-console.log(number);
+// function square(number) {
+//   return number * number;
+// }
+// let number = square(7);
+// console.log(number);
+// -function add(x, y) {
+//   return x + y;
+// };
+// let x = 5;
+// let y = 7;
+// console.log(x + y);
 
-function add(x, y) {
-  return x + y;
+function getOpposite(num) {
+  return console.log("Opposite Num", -num);
 }
-let x = 5;
-let y = 7;
-console.log(x + y);
+getOpposite(5);
+getOpposite(0);
+getOpposite(-5);
+getOpposite("5a");
+getOpposite(5.5);
