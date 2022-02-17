@@ -153,9 +153,15 @@
 // getFirstElement([1, 2, 3, 4, 5]);
 // getFirstElement([58, 5246, 85]);
 
-function hourToSec(hour) {
-  return console.log("ToSeconds =", hour * 3600);
+// function hourToSec(hour) {
+//   return console.log("ToSeconds =", hour * 3600);
+// }
+// hourToSec(5);
+// hourToSec(10);
+// hourToSec(2);
+
+function perimeter(height, width) {
+  return console.log("Perimeter of Rectangle:", 2 * (height + width)); //perimeter=2(l+w)
 }
-hourToSec(5);
-hourToSec(10);
-hourToSec(2);
+perimeter(5, 6);
+perimeter(7, 8);
