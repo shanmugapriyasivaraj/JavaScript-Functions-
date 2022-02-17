@@ -140,9 +140,15 @@
 // toInt("1000");
 // toInt("hello");
 
-function increment(number) {
-  return console.log("Next Number:", number + 1);
+// function increment(number) {
+//   return console.log("Next Number:", number + 1);
+// }
+// increment(5);
+// increment(-3);
+// increment(105);
+
+function getFirstElement(array) {
+  return console.log("First Element:", array[0]);
 }
-increment(5);
-increment(-3);
-increment(105);
+getFirstElement([1, 2, 3, 4, 5]);
+getFirstElement([58, 5246, 85]);
