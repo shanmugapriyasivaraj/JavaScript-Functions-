@@ -132,10 +132,17 @@
 // toSeconds(3); //180
 // toSeconds(2); //120
 
-function toInt(num) {
-  let value = parseInt(num);
-  console.log("integer is :", value);
+// function toInt(num) {
+//   let value = parseInt(num);
+//   console.log("integer is :", value);
+// }
+// toInt("5");
+// toInt("1000");
+// toInt("hello");
+
+function increment(number) {
+  return console.log("Next Number:", number + 1);
 }
-toInt("5");
-toInt("1000");
-toInt("hello");
+increment(5);
+increment(-3);
+increment(105);
