@@ -213,5 +213,5 @@ function isEven(number) {
   }
 }
 console.log("isEven:", isEven(25));
-console.log("isEven:", isEven("11h"));
+console.log("isEven:", isEven("1h"));
 console.log("isEven:", isEven(50));
