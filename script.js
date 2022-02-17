@@ -235,11 +235,21 @@
 // getFullName("Anu", "Pallavi");
 // getFullName(" '' ", " '' ");
 
-function getLengthOfWord(str) {
-  let length = str.length;
-  return console.log("Length of word:", length);
+// function getLengthOfWord(str) {
+//   let length = str.length;
+//   return console.log("Length of word:", length);
+// }
+// getLengthOfWord("hello world");
+// getLengthOfWord("");
+// getLengthOfWord("length");
+// getLengthOfWord("9");
+
+function isSameLength(word1, word2) {
+  if (word1.length === word2.length) {
+    return true;
+  } else {
+    return false;
+  }
 }
-getLengthOfWord("hello world");
-getLengthOfWord("");
-getLengthOfWord("length");
-getLengthOfWord("9");
+console.log("Is Same Length:", isSameLength("hello", "world"));
+console.log("Is Same Length:", isSameLength("priya", "anu"));
