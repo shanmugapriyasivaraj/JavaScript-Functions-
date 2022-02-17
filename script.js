@@ -125,9 +125,17 @@
 // getOpposite("5a");
 // getOpposite(5.5);
 
-function toSeconds(min) {
-  return console.log("To Seconds:", min * 60);
+// function toSeconds(min) {
+//   return console.log("To Seconds:", min * 60);
+// }
+// toSeconds(5); //300
+// toSeconds(3); //180
+// toSeconds(2); //120
+
+function toInt(num) {
+  let value = parseInt(num);
+  console.log("integer is :", value);
 }
-toSeconds(5); //300
-toSeconds(3); //180
-toSeconds(2); //120
+toInt("5");
+toInt("1000");
+toInt("hello");
