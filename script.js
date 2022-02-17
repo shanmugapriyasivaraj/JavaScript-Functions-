@@ -160,8 +160,18 @@
 // hourToSec(10);
 // hourToSec(2);
 
-function perimeter(height, width) {
-  return console.log("Perimeter of Rectangle:", 2 * (height + width)); //perimeter=2(l+w)
+// function perimeter(height, width) {
+//   return console.log("Perimeter of Rectangle:", 2 * (height + width)); //perimeter=2(l+w)
+// }
+// perimeter(5, 6);
+// perimeter(7, 8);
+
+function value(number1, number2) {
+  if (number1 + number2 < 100) {
+    return true;
+  } else {
+    return false;
+  }
 }
-perimeter(5, 6);
-perimeter(7, 8);
+console.log(value(50, 80));
+console.log(value(20, 30));
