@@ -227,9 +227,19 @@
 // console.log("Are Both Odd:", areBothOdd(10, 20));
 // console.log("Are Both Odd:", areBothOdd(7, 6));
 
-function getFullName(firstName, lastName) {
-  let fullName = firstName + lastName;
-  return console.log("FullName =", fullName);
+// function getFullName(firstName, lastName) {
+//   let fullName = firstName + lastName;
+//   return console.log("FullName =", fullName);
+// }
+// getFullName("Priya", "Sivaraj");
+// getFullName("Anu", "Pallavi");
+// getFullName(" '' ", " '' ");
+
+function getLengthOfWord(str) {
+  let length = str.length;
+  return console.log("Length of word:", length);
 }
-getFullName("Priya", "Sivaraj");
-getFullName("Anu", "Pallavi");
+getLengthOfWord("hello world");
+getLengthOfWord("");
+getLengthOfWord("length");
+getLengthOfWord("9");
