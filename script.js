@@ -176,10 +176,21 @@
 // console.log(value(50, 80));
 // console.log(value(20, 30));
 
-function remainder(number1, number2) {
-  let remainderValue = number1 % number2;
-  return console.log("Remainder:", remainderValue);
+// function remainder(number1, number2) {
+//   let remainderValue = number1 % number2;
+//   return console.log("Remainder:", remainderValue);
+// }
+// remainder(25, 7);
+// remainder(85, 3);
+// remainder(58, 8);.
+
+function count(turkey, horse, pigs) {
+  let turkeyLegs = 2;
+  let horseLegs = 4;
+  let piglegs = 4;
+  let animalLegs = turkey * 2 + horse * 4 + pigs * 4;
+  return console.log("Total Animal legs:", animalLegs);
 }
-remainder(25, 7);
-remainder(85, 3);
-remainder(58, 8);
+count(2, 3, 5);
+count(1, 2, 3);
+count(5, 2, 8);
