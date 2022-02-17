@@ -195,12 +195,23 @@
 // count(1, 2, 3);
 // count(5, 2, 8);
 
-function div(number) {
-  if (number % 5 === 0) {
+// function div(number) {
+//   if (number % 5 === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log("DivisibleBy Five:", div(50));
+// console.log("DivisibleBy Five:", div(72));
+
+function isEven(number) {
+  if (number % 2 == 0) {
     return true;
   } else {
     return false;
   }
 }
-console.log("DivisibleBy Five:", div(50));
-console.log("DivisibleBy Five:", div(72));
+console.log("isEven:", isEven(25));
+console.log("isEven:", isEven("11h"));
+console.log("isEven:", isEven(50));
