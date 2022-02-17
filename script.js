@@ -256,8 +256,13 @@
 
 // d=√[(x2-x1)^2+(y2-y1)^2]
 
-function distance(x1, x2, y1, y2) {
-  let distance = Math.sqrt(x2 - x1) + Math.sqrt(y2 - y1);
-  console.log("Distance:", distance);
+// function distance(x1, x2, y1, y2) {
+//   let distance = Math.sqrt(x2 - x1) + Math.sqrt(y2 - y1);
+//   console.log("Distance:", distance);
+// }
+// distance(100, 200, 300, 400); //20
+
+function getNthElement(array, int) {
+  return array[int];
 }
-distance(100, 200, 300, 400); //20
+console.log(getNthElement([1, 3, 5], 0));
