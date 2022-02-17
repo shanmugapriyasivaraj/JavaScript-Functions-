@@ -184,13 +184,23 @@
 // remainder(85, 3);
 // remainder(58, 8);.
 
-function count(turkey, horse, pigs) {
-  let turkeyLegs = 2;
-  let horseLegs = 4;
-  let piglegs = 4;
-  let animalLegs = turkey * 2 + horse * 4 + pigs * 4;
-  return console.log("Total Animal legs:", animalLegs);
+// function count(turkey, horse, pigs) {
+//   let turkeyLegs = 2;
+//   let horseLegs = 4;
+//   let piglegs = 4;
+//   let animalLegs = turkey * 2 + horse * 4 + pigs * 4;
+//   return console.log("Total Animal legs:", animalLegs);
+// }
+// count(2, 3, 5);
+// count(1, 2, 3);
+// count(5, 2, 8);
+
+function div(number) {
+  if (number % 5 === 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
-count(2, 3, 5);
-count(1, 2, 3);
-count(5, 2, 8);
+console.log("DivisibleBy Five:", div(50));
+console.log("DivisibleBy Five:", div(72));
