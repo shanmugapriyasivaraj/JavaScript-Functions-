@@ -61,19 +61,38 @@
 // })([1, 2, 3, 4, 5, 6, 7, 8, 9]);
 
 // anonymous function
+// let prime = function () {
+//   console.log("hi");
+// };
+// // console.log(prime);
 
-let prime = function (primeNum) {
-  for (let i = 0; i < primeNum.length; i++) {
-    let flag = 0;
-    for (let j = 2; j < primeNum[i]; j++) {
-      if (primeNum[i] % j == 0) {
-        flag = 1;
-        break;
-      }
-    }
-    if (flag == 0) {
-      console.log("prime Number:", primeNum[i]);
-    }
-  }
-};
-prime([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+// prime();
+
+// let prime = function prime (primeNum) {
+//   for (let i = 0; i < primeNum.length; i++) {
+//     let flag = 0;
+//     for (let j = 2; j < primeNum[i]; j++) {
+//       if (primeNum[i] % j == 0) {
+//         flag = 1;
+//         break;
+//       }
+//     }
+//     if (flag == 0) {
+//       console.log("prime Number:", primeNum[i]);
+//     }
+//   }
+// };
+// prime([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+
+function addFive(num) {
+  return console.log("params:", num + 5);
+}
+addFive(5);
+addFive(0);
+addFive(-5); //argument
+
+// var num = 10;
+// function addFive(value) {
+//   return num;
+// }
+// var result = addFive(num);
