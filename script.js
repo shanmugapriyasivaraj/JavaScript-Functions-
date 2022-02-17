@@ -205,13 +205,24 @@
 // console.log("DivisibleBy Five:", div(50));
 // console.log("DivisibleBy Five:", div(72));
 
-function isEven(number) {
-  if (number % 2 == 0) {
-    return true;
-  } else {
+// function isEven(number) {
+//   if (number % 2 == 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log("isEven:", isEven(25));
+// console.log("isEven:", isEven("1h"));
+// console.log("isEven:", isEven(50));
+
+function areBothOdd(number1, number2) {
+  if (number1 % 2 == 0 || number2 % 2 == 0) {
     return false;
+  } else {
+    return true;
   }
 }
-console.log("isEven:", isEven(25));
-console.log("isEven:", isEven("1h"));
-console.log("isEven:", isEven(50));
+console.log("Are Both Odd:", areBothOdd(7, 5));
+console.log("Are Both Odd:", areBothOdd(10, 20));
+console.log("Are Both Odd:", areBothOdd(7, 6));
