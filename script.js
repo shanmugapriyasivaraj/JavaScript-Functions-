@@ -116,11 +116,18 @@
 // let y = 7;
 // console.log(x + y);
 
-function getOpposite(num) {
-  return console.log("Opposite Num", -num);
+// function getOpposite(num) {
+//   return console.log("Opposite Num", -num);
+// }
+// getOpposite(5);
+// getOpposite(0);
+// getOpposite(-5);
+// getOpposite("5a");
+// getOpposite(5.5);
+
+function toSeconds(min) {
+  return console.log("To Seconds:", min * 60);
 }
-getOpposite(5);
-getOpposite(0);
-getOpposite(-5);
-getOpposite("5a");
-getOpposite(5.5);
+toSeconds(5); //300
+toSeconds(3); //180
+toSeconds(2); //120
