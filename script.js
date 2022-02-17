@@ -262,7 +262,12 @@
 // }
 // distance(100, 200, 300, 400); //20
 
-function getNthElement(array, int) {
-  return array[int];
+// function getNthElement(array, int) {
+//   return array[int];
+// }
+// console.log(getNthElement([1, 3, 5], 0));
+
+function getLastElement(array) {
+  return array[array.length - 1];
 }
-console.log(getNthElement([1, 3, 5], 0));
+console.log(getLastElement([1, 2, 3]));
