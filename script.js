@@ -216,13 +216,20 @@
 // console.log("isEven:", isEven("1h"));
 // console.log("isEven:", isEven(50));
 
-function areBothOdd(number1, number2) {
-  if (number1 % 2 == 0 || number2 % 2 == 0) {
-    return false;
-  } else {
-    return true;
-  }
+// function areBothOdd(number1, number2) {
+//   if (number1 % 2 == 0 || number2 % 2 == 0) {
+//     return false;
+//   } else {
+//     return true;
+//   }
+// }
+// console.log("Are Both Odd:", areBothOdd(7, 5));
+// console.log("Are Both Odd:", areBothOdd(10, 20));
+// console.log("Are Both Odd:", areBothOdd(7, 6));
+
+function getFullName(firstName, lastName) {
+  let fullName = firstName + lastName;
+  return console.log("FullName =", fullName);
 }
-console.log("Are Both Odd:", areBothOdd(7, 5));
-console.log("Are Both Odd:", areBothOdd(10, 20));
-console.log("Are Both Odd:", areBothOdd(7, 6));
+getFullName("Priya", "Sivaraj");
+getFullName("Anu", "Pallavi");
