@@ -302,18 +302,30 @@
 // d.getName();
 // d.getSound();
 
-class Dog {
-  constructor(name, sound) {
-    this.name = name;
-    this.sound = sound;
+// class Dog {
+//   constructor(name, sound) {
+//     this.name = name;
+//     this.sound = sound;
+//   }
+//   getName() {
+//     console.log(this.name);
+//   }
+//   getSound() {
+//     console.log(this.sound);
+//   }
+// }
+// var d = new Dog("Puppy", "bark");
+// d.getName();
+// d.getSound();
+
+class rectangle {
+  constructor(value1, value2) {
+    this.value1 = value1;
+    this.value2 = value2;
   }
-  getName() {
-    console.log(this.name);
-  }
-  getSound() {
-    console.log(this.sound);
+  getvalue() {
+    console.log(this.value1 * this.value2);
   }
 }
-var d = new Dog("Puppy", "bark");
-d.getName();
-d.getSound();
+var area = new rectangle(5, 6);
+area.getvalue();
