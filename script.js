@@ -109,7 +109,8 @@
 // }
 // let number = square(7);
 // console.log(number);
-// -function add(x, y) {
+
+// function add(x, y) {
 //   return x + y;
 // };
 // let x = 5;
@@ -267,7 +268,14 @@
 // }
 // console.log(getNthElement([1, 3, 5], 0));
 
-function getLastElement(array) {
-  return array[array.length - 1];
+// function getLastElement(array) {
+//   return array[array.length - 1];
+// }
+// console.log(getLastElement([1, 2, 3]));
+
+function cars(name) {
+  var carName = name;
+  console.log("car Name:", carName);
 }
-console.log(getLastElement([1, 2, 3]));
+cars("volvo");
+console.log("Car Name:", carName);
