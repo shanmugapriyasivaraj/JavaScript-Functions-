@@ -286,18 +286,34 @@
 // };
 // console.log(obj.hasOwnProperty("name"));
 
-function Dog(name, sound) {
-  this.name = name;
-  this.sound = sound;
+// function Dog(name, sound) {
+//   this.name = name;
+//   this.sound = sound;
 
-  this.getSound = function () {
+//   this.getSound = function () {
+//     console.log(this.name);
+//   };
+// }
+// Dog.prototype.getName = function () {
+//   console.log(this.sound);
+// };
+// var d = new Dog("Fido", "Bark");
+// console.log(d);
+// d.getName();
+// d.getSound();
+
+class Dog {
+  constructor(name, sound) {
+    this.name = name;
+    this.sound = sound;
+  }
+  getName() {
     console.log(this.name);
-  };
+  }
+  getSound() {
+    console.log(this.sound);
+  }
 }
-Dog.prototype.getName = function () {
-  console.log(this.sound);
-};
-var d = new Dog("Fido", "Bark");
-console.log(d);
+var d = new Dog("Puppy", "bark");
 d.getName();
 d.getSound();
