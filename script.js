@@ -280,8 +280,24 @@
 // cars("volvo");
 // // console.log("Car Name:", carName);
 
-var obj = {
-  name: "priya",
-  agr: 20,
+// var obj = {
+//   name: "priya",
+//   age: 20,
+// };
+// console.log(obj.hasOwnProperty("name"));
+
+function Dog(name, sound) {
+  this.name = name;
+  this.sound = sound;
+
+  this.getSound = function () {
+    console.log(this.name);
+  };
+}
+Dog.prototype.getName = function () {
+  console.log(this.sound);
 };
-console.log(obj.hasOwnProperty("name"));
+var d = new Dog("Fido", "Bark");
+console.log(d);
+d.getName();
+d.getSound();
