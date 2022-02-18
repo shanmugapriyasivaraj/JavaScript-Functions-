@@ -273,9 +273,15 @@
 // }
 // console.log(getLastElement([1, 2, 3]));
 
-function cars(name) {
-  var carName = name;
-  console.log("car Name:", carName);
-}
-cars("volvo");
-console.log("Car Name:", carName);
+// function cars(name) {
+//   var carName = name;
+//   console.log("car Name:", carName);
+// }
+// cars("volvo");
+// // console.log("Car Name:", carName);
+
+var obj = {
+  name: "priya",
+  agr: 20,
+};
+console.log(obj.hasOwnProperty("name"));
