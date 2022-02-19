@@ -423,25 +423,32 @@
 // var Sub = new subtraction(7, 5);
 // Sub.getValue();
 
-class Mul {
-  constructor(a, b) {
-    this.a = a;
-    this.b = b;
-  }
-  getMulti() {
-    console.log(this.a * this.b);
-  }
-}
-class multiplication extends Mul {
-  constructor(a, b, c, d) {
-    super(a, b);
-  }
-  getValue() {
-    this.getMulti();
-  }
-}
-var mul = new multiplication(5, 6);
-mul.getValue();
+// class Mul {
+//   constructor(a, b) {
+//     this.a = a;
+//     this.b = b;
+//   }
+//   getMulti() {
+//     console.log(this.a * this.b);
+//   }
+// }
+// class multiplication extends Mul {
+//   constructor(a, b, c, d) {
+//     super(a, b);
+//   }
+//   getValue() {
+//     this.getMulti();
+//   }
+// }
+// var mul = new multiplication(5, 6);
+// mul.getValue();
 
-var mul = new multiplication(7, 5);
-mul.getValue();
+// var mul = new multiplication(7, 5);
+// mul.getValue();
+
+// Square of a number
+
+let a = 5;
+let b = Math.pow(a, 2);
+
+console.log(b);
