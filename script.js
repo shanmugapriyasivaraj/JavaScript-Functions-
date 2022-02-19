@@ -353,26 +353,49 @@
 // dd.setSound("bark");
 // dd.getSound();
 
-class Animal {
-  constructor(legs, tail, gender) {
-    this.legs = legs;
-    this.tail = tail;
-    this.gender = gender;
+// class Animal {
+//   constructor(legs, tail, gender) {
+//     this.legs = legs;
+//     this.tail = tail;
+//     this.gender = gender;
+//   }
+//   getLegs() {
+//     console.log(this.legs);
+//   }
+// }
+// class Dog extends Animal {
+//   constructor(name, sound) {
+//     super(4, true, "male");
+//     this.name = name;
+//     this.sound = sound;
+//   }
+//   getData() {
+//     console.log(this.name, this.sound, this.tail, this.gender);
+//     this.getLegs();
+//   }
+// }
+// var dd = new Dog("Doggy", "Bark");
+// dd.getData();
+
+class Add {
+  constructor(a, b) {
+    this.a = a;
+    this.b = b;
   }
-  getLegs() {
-    console.log(this.legs);
+  getAdd() {
+    console.log(this.a + this.b);
   }
 }
-class Dog extends Animal {
-  constructor(name, sound) {
-    super(4, true, "male");
-    this.name = name;
-    this.sound = sound;
+class addition extends Add {
+  constructor(a, b, c, d) {
+    super(a, b);
   }
-  getData() {
-    console.log(this.name, this.sound, this.tail, this.gender);
-    this.getLegs();
+  getValue() {
+    this.getAdd();
   }
 }
-var dd = new Dog("Doggy", "Bark");
-dd.getData();
+var add = new addition(5, 6);
+add.getValue();
+
+var add = new addition(7, 5);
+add.getValue();
