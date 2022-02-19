@@ -448,7 +448,21 @@
 
 // Square of a number
 
-let a = 5;
-let b = Math.pow(a, 2);
+// let a = 5;
+// let b = Math.pow(a, 2);
 
-console.log(b);
+// console.log(b);
+
+// Swapping two numbers
+
+let a = 5;
+let b = 6;
+let temporary;
+
+// Swapping variables
+temporary = a;
+a = b;
+b = temporary;
+
+console.log("The value of a after swapping:", a);
+console.log("The value of b after swapping:", b);
