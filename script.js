@@ -469,10 +469,17 @@
 
 // additon of three numbers
 
-let a = 5;
-let b = 20;
-let c = 25;
+// let a = 5;
+// let b = 20;
+// let c = 25;
 
-let add = a + b + c;
+// let add = a + b + c;
 
-console.log("Additon of three numbers:", add);
+// console.log("Additon of three numbers:", add);
+
+// Celsius to Fahrenhiet    (15°C × 9/5) + 32 = 59°F
+
+let Celsius = 15;
+let Fahrenhiet = (9 / 5) * Celsius + 32;
+
+console.log("Fahrenhiet:", Fahrenhiet);
