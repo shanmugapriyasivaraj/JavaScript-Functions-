@@ -486,7 +486,14 @@
 
 // Meter to Miles  //0.000621
 
-let meter = 185;
-let miles = meter * 0.000621;
+// let meter = 185;
+// let miles = meter * 0.000621;
 
-console.log("Miles:", miles);
+// console.log("Miles:", miles);
+
+// Pounds to kG   0.4536
+
+let pounds = 2.204;
+let kg = pounds * 0.4536;
+
+console.log(kg);
