@@ -330,25 +330,49 @@
 // var area = new rectangle(5, 6);
 // area.getvalue();
 
-class Dog {
-  getName() {
-    //getter
-    console.log(this.name);
+// class Dog {
+//   getName() {
+//     //getter
+//     console.log(this.name);
+//   }
+//   setName(name) {
+//     //setter
+//     this.name = name;
+//   }
+//   getSound() {
+//     console.log(this.sound);
+//   }
+//   setSound(sound) {
+//     this.sound = sound;
+//   }
+// }
+// var dd = new Dog();
+// console.log(dd);
+// dd.setName("puppy");
+// dd.getName();
+// dd.setSound("bark");
+// dd.getSound();
+
+class Animal {
+  constructor(legs, tail, gender) {
+    this.legs = legs;
+    this.tail = tail;
+    this.gender = gender;
   }
-  setName(name) {
-    //setter
-    this.name = name;
-  }
-  getSound() {
-    console.log(this.sound);
-  }
-  setSound(sound) {
-    this.sound = sound;
+  getLegs() {
+    console.log(this.legs);
   }
 }
-var dd = new Dog();
-console.log(dd);
-dd.setName("puppy");
-dd.getName();
-dd.setSound("bark");
-dd.getSound();
+class Dog extends Animal {
+  constructor(name, sound) {
+    super(4, true, "male");
+    this.name = name;
+    this.sound = sound;
+  }
+  getData() {
+    console.log(this.name, this.sound, this.tail, this.gender);
+    this.getLegs();
+  }
+}
+var dd = new Dog("Doggy", "Bark");
+dd.getData();
