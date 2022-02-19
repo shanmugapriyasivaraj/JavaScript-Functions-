@@ -377,25 +377,48 @@
 // var dd = new Dog("Doggy", "Bark");
 // dd.getData();
 
-class Add {
+// class Add {
+//   constructor(a, b) {
+//     this.a = a;
+//     this.b = b;
+//   }
+//   getAdd() {
+//     console.log(this.a + this.b);
+//   }
+// }
+// class addition extends Add {
+//   constructor(a, b, c, d) {
+//     super(a, b);
+//   }
+//   getValue() {
+//     this.getAdd();
+//   }
+// }
+// var add = new addition(5, 6);
+// add.getValue();
+
+// var add = new addition(7, 5);
+// add.getValue();
+
+class sub {
   constructor(a, b) {
     this.a = a;
     this.b = b;
   }
-  getAdd() {
-    console.log(this.a + this.b);
+  getSub() {
+    console.log(this.a - this.b);
   }
 }
-class addition extends Add {
+class subtraction extends sub {
   constructor(a, b, c, d) {
     super(a, b);
   }
   getValue() {
-    this.getAdd();
+    this.getSub();
   }
 }
-var add = new addition(5, 6);
-add.getValue();
+var Sub = new subtraction(8, 5);
+Sub.getValue();
 
-var add = new addition(7, 5);
-add.getValue();
+var Sub = new subtraction(7, 5);
+Sub.getValue();
