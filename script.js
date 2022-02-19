@@ -479,7 +479,14 @@
 
 // Celsius to Fahrenhiet    (15°C × 9/5) + 32 = 59°F
 
-let Celsius = 15;
-let Fahrenhiet = (9 / 5) * Celsius + 32;
+// let Celsius = 15;
+// let Fahrenhiet = (9 / 5) * Celsius + 32;
 
-console.log("Fahrenhiet:", Fahrenhiet);
+// console.log("Fahrenhiet:", Fahrenhiet);
+
+// Meter to Miles  //0.000621
+
+let meter = 185;
+let miles = meter * 0.000621;
+
+console.log("Miles:", miles);
