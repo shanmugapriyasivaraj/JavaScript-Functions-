@@ -400,25 +400,48 @@
 // var add = new addition(7, 5);
 // add.getValue();
 
-class sub {
+// class sub {
+//   constructor(a, b) {
+//     this.a = a;
+//     this.b = b;
+//   }
+//   getSub() {
+//     console.log(this.a - this.b);
+//   }
+// }
+// class subtraction extends sub {
+//   constructor(a, b, c, d) {
+//     super(a, b);
+//   }
+//   getValue() {
+//     this.getSub();
+//   }
+// }
+// var Sub = new subtraction(8, 5);
+// Sub.getValue();
+
+// var Sub = new subtraction(7, 5);
+// Sub.getValue();
+
+class Mul {
   constructor(a, b) {
     this.a = a;
     this.b = b;
   }
-  getSub() {
-    console.log(this.a - this.b);
+  getMulti() {
+    console.log(this.a * this.b);
   }
 }
-class subtraction extends sub {
+class multiplication extends Mul {
   constructor(a, b, c, d) {
     super(a, b);
   }
   getValue() {
-    this.getSub();
+    this.getMulti();
   }
 }
-var Sub = new subtraction(8, 5);
-Sub.getValue();
+var mul = new multiplication(5, 6);
+mul.getValue();
 
-var Sub = new subtraction(7, 5);
-Sub.getValue();
+var mul = new multiplication(7, 5);
+mul.getValue();
