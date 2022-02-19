@@ -455,14 +455,24 @@
 
 // Swapping two numbers
 
+// let a = 5;
+// let b = 6;
+// let temporary;
+
+// // Swapping variables
+// temporary = a;
+// a = b;
+// b = temporary;
+
+// console.log("The value of a after swapping:", a);
+// console.log("The value of b after swapping:", b);
+
+// additon of three numbers
+
 let a = 5;
-let b = 6;
-let temporary;
+let b = 20;
+let c = 25;
 
-// Swapping variables
-temporary = a;
-a = b;
-b = temporary;
+let add = a + b + c;
 
-console.log("The value of a after swapping:", a);
-console.log("The value of b after swapping:", b);
+console.log("Additon of three numbers:", add);
