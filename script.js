@@ -509,9 +509,17 @@
 // console.log(myClass.myStaticMethod());
 // console.log(myClass.myStaticProperty());
 
+// const classInstance = new (class {
+//   set prop(value) {
+//     console.log(value);
+//   }
+// })();
+// classInstance.prop = 10;
+
 const classInstance = new (class {
-  set prop(value) {
-    console.log(value);
+  get prop() {
+    return 100;
   }
 })();
 classInstance.prop = 10;
+console.log(classInstance.prop);
