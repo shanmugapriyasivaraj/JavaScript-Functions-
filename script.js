@@ -498,13 +498,20 @@
 
 // console.log(kg);
 
-class myClass {
-  static myStaticMethod() {
-    return "hi";
+// class myClass {
+//   static myStaticMethod() {
+//     return "hi";
+//   }
+//   static myStaticProperty() {
+//     return "hello";
+//   }
+// }
+// console.log(myClass.myStaticMethod());
+// console.log(myClass.myStaticProperty());
+
+const classInstance = new (class {
+  set prop(value) {
+    console.log(value);
   }
-  static myStaticProperty() {
-    return "hello";
-  }
-}
-console.log(myClass.myStaticMethod());
-console.log(myClass.myStaticProperty());
+})();
+classInstance.prop = 10;
