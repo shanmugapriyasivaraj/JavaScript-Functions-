@@ -516,10 +516,14 @@
 // })();
 // classInstance.prop = 10;
 
-const classInstance = new (class {
-  get prop() {
-    return 100;
-  }
-})();
-classInstance.prop = 10;
-console.log(classInstance.prop);
+// const classInstance = new (class {
+//   get prop() {
+//     return 100;
+//   }
+// })();
+// classInstance.prop = 10;
+// console.log(classInstance.prop);
+
+const PI = 3.141593;
+
+console.log(PI > 3.0);
