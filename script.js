@@ -493,7 +493,18 @@
 
 // Pounds to kG   0.4536
 
-let pounds = 2.204;
-let kg = pounds * 0.4536;
+// let pounds = 2.204;
+// let kg = pounds * 0.4536;
 
-console.log(kg);
+// console.log(kg);
+
+class myClass {
+  static myStaticMethod() {
+    return "hi";
+  }
+  static myStaticProperty() {
+    return "hello";
+  }
+}
+console.log(myClass.myStaticMethod());
+console.log(myClass.myStaticProperty());
