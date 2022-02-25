@@ -599,3 +599,8 @@ let firstName = "Anu";
 let lastName = "Pallavi";
 let fullName = firstName.concat(" ", lastName);
 console.log("FullName is :", fullName);
+
+// Trim
+let text1 = "           Hello world";
+let text2 = text1.trim();
+console.log(text2);
