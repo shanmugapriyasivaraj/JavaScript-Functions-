@@ -593,3 +593,9 @@ let lwrCase = "THIS IS STRING";
 let lwrCase1 = lwrCase.toLowerCase();
 
 console.log(lwrCase1);
+
+// concat
+let firstName = "Anu";
+let lastName = "Pallavi";
+let fullName = firstName.concat(" ", lastName);
+console.log("FullName is :", fullName);
