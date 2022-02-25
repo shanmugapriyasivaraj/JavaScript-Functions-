@@ -574,3 +574,22 @@ let part2 = fruits.slice(-6);
 console.log(part2);
 let part3 = fruits.slice(-12, -1);
 console.log(part3);
+
+// replace
+
+let msg = "Please visit Microsoft";
+let newMsg = msg.replace("Microsoft", "Website");
+
+console.log(newMsg);
+
+// To uppercase
+
+let str = "this is string";
+let str1 = str.toUpperCase();
+console.log(str1);
+
+//To lower case
+let lwrCase = "THIS IS STRING";
+let lwrCase1 = lwrCase.toLowerCase();
+
+console.log(lwrCase1);
