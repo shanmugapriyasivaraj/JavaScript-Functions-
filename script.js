@@ -528,22 +528,36 @@
 
 // console.log(PI > 3.0);
 
-var a = 1;
-var b = 2;
+// var a = 1;
+// var b = 2;
 
-for (let i = 0; i < a.length; i++) {
-  let x = a[i];
-}
-for (let i = 0; i < b.length; i++) {
-  let y = b[i];
-}
-let callbacks = [];
-for (let i = 0; i <= 2; i++) {
-  callbacks[i] = function () {
-    return i * 2;
-  };
-}
+// for (let i = 0; i < a.length; i++) {
+//   let x = a[i];
+// }
+// for (let i = 0; i < b.length; i++) {
+//   let y = b[i];
+// }
+// let callbacks = [];
+// for (let i = 0; i <= 2; i++) {
+//   callbacks[i] = function () {
+//     return i * 2;
+//   };
+// }
 
-console.log(callbacks[0]());
-console.log(callbacks[1]());
-console.log(callbacks[2]());
+// console.log(callbacks[0]());
+// console.log(callbacks[1]());
+// console.log(callbacks[2]());
+
+{
+  function foo() {
+    return 1;
+  }
+  foo === 1;
+  {
+    function foo() {
+      return 2;
+    }
+    foo === 2;
+  }
+}
+console.log(foo(1));
