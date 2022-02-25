@@ -561,3 +561,16 @@
 //   }
 // }
 // console.log(foo(1));
+
+// Slice
+
+let fruits = "Apple,Mango,Banana";
+let part = fruits.slice(6);
+console.log(part);
+
+let part1 = fruits.slice(6, 11);
+console.log(part1);
+let part2 = fruits.slice(-6);
+console.log(part2);
+let part3 = fruits.slice(-12, -1);
+console.log(part3);
