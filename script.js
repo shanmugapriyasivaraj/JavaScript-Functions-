@@ -548,16 +548,16 @@
 // console.log(callbacks[1]());
 // console.log(callbacks[2]());
 
-{
-  function foo() {
-    return 1;
-  }
-  foo === 1;
-  {
-    function foo() {
-      return 2;
-    }
-    foo === 2;
-  }
-}
-console.log(foo(1));
+// {
+//   function foo() {
+//     return 1;
+//   }
+//   foo === 1;
+//   {
+//     function foo() {
+//       return 2;
+//     }
+//     foo === 2;
+//   }
+// }
+// console.log(foo(1));
