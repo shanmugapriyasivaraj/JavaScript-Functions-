@@ -605,24 +605,28 @@
 // let text2 = text1.trim();
 // console.log(text2);
 
-var obj = {
-  firstName: "Anu",
-  lastName: "Pallavi",
+// var obj = {
+//   firstName: "Anu",
+//   lastName: "Pallavi",
 
-  address: {
-    street: "Main Street",
-    city: "New york",
-    state: "NY",
-    zip: 10001,
-    country: "USA",
-  },
-  getName: function () {
-    return this.firstName + " " + this.lastName;
-  },
+//   address: {
+//     street: "Main Street",
+//     city: "New york",
+//     state: "NY",
+//     zip: 10001,
+//     country: "USA",
+//   },
+//   getName: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
 
-  getAddress: function () {
-    return this.address.city;
-  },
-};
-console.log(obj.getName());
-console.log(obj.getAddress());
+//   getAddress: function () {
+//     return this.address.city;
+//   },
+// };
+// console.log(obj.getName());
+// console.log(obj.getAddress());
+
+// Square of any number
+let a = 5;
+console.log(Math.pow(a, 2));
