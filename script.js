@@ -564,43 +564,65 @@
 
 // Slice
 
-let fruits = "Apple,Mango,Banana";
-let part = fruits.slice(6);
-console.log(part);
+// let fruits = "Apple,Mango,Banana";
+// let part = fruits.slice(6);
+// console.log(part);
 
-let part1 = fruits.slice(6, 11);
-console.log(part1);
-let part2 = fruits.slice(-6);
-console.log(part2);
-let part3 = fruits.slice(-12, -1);
-console.log(part3);
+// let part1 = fruits.slice(6, 11);
+// console.log(part1);
+// let part2 = fruits.slice(-6);
+// console.log(part2);
+// let part3 = fruits.slice(-12, -1);
+// console.log(part3);
 
-// replace
+// // replace
 
-let msg = "Please visit Microsoft";
-let newMsg = msg.replace("Microsoft", "Website");
+// let msg = "Please visit Microsoft";
+// let newMsg = msg.replace("Microsoft", "Website");
 
-console.log(newMsg);
+// console.log(newMsg);
 
-// To uppercase
+// // To uppercase
 
-let str = "this is string";
-let str1 = str.toUpperCase();
-console.log(str1);
+// let str = "this is string";
+// let str1 = str.toUpperCase();
+// console.log(str1);
 
-//To lower case
-let lwrCase = "THIS IS STRING";
-let lwrCase1 = lwrCase.toLowerCase();
+// //To lower case
+// let lwrCase = "THIS IS STRING";
+// let lwrCase1 = lwrCase.toLowerCase();
 
-console.log(lwrCase1);
+// console.log(lwrCase1);
 
-// concat
-let firstName = "Anu";
-let lastName = "Pallavi";
-let fullName = firstName.concat(" ", lastName);
-console.log("FullName is :", fullName);
+// // concat
+// let firstName = "Anu";
+// let lastName = "Pallavi";
+// let fullName = firstName.concat(" ", lastName);
+// console.log("FullName is :", fullName);
 
-// Trim
-let text1 = "           Hello world";
-let text2 = text1.trim();
-console.log(text2);
+// // Trim
+// let text1 = "           Hello world";
+// let text2 = text1.trim();
+// console.log(text2);
+
+var obj = {
+  firstName: "Anu",
+  lastName: "Pallavi",
+
+  address: {
+    street: "Main Street",
+    city: "New york",
+    state: "NY",
+    zip: 10001,
+    country: "USA",
+  },
+  getName: function () {
+    return this.firstName + " " + this.lastName;
+  },
+
+  getAddress: function () {
+    return this.address.city;
+  },
+};
+console.log(obj.getName());
+console.log(obj.getAddress());
