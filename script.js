@@ -631,12 +631,24 @@
 // let a = 5;
 // console.log(Math.pow(a, 2));
 
-map();
+// map();
 
-const numbers = [1, 2, 3, 4, 5];
-console.log(numbers);
+// const numbers = [1, 2, 3, 4, 5];
+// console.log(numbers);
 
-let result = numbers.map(function (val) {
-  return val + 2;
+// let result = numbers.map(function (val) {
+//   return val + 2;
+// });
+// console.log(result);
+
+const people = [
+  { id: 1, firstName: "Varun", lastName: "Krishnan" },
+  { id: 2, firstName: "Nithya", lastName: "Vasudevan" },
+  { id: 3, firstName: "Anu", lastName: "Pallavi" },
+];
+let result = people.map(function (val) {
+  let fullName = [val.firstName, val.lastName].join(" ");
+  let obj = { id: val.id, fullName };
+  return obj;
 });
 console.log(result);
