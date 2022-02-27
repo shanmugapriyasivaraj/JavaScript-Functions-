@@ -641,14 +641,68 @@
 // });
 // console.log(result);
 
-const people = [
-  { id: 1, firstName: "Varun", lastName: "Krishnan" },
-  { id: 2, firstName: "Nithya", lastName: "Vasudevan" },
-  { id: 3, firstName: "Anu", lastName: "Pallavi" },
+// const people = [
+//   { id: 1, firstName: "Varun", lastName: "Krishnan" },
+//   { id: 2, firstName: "Nithya", lastName: "Vasudevan" },
+//   { id: 3, firstName: "Anu", lastName: "Pallavi" },
+// ];
+// let result = people.map(function (val) {
+//   let fullName = [val.firstName, val.lastName].join(" ");
+//   let obj = { id: val.id, fullName };
+//   return obj;
+// });
+// console.log(result);
+
+let products = [
+  { id: 1, title: "Android Phone", cost: 7500 },
+  { id: 2, title: "Gaming Computer", cost: 90500 },
+  { id: 3, title: "HeadPhone", cost: 2400 },
 ];
-let result = people.map(function (val) {
-  let fullName = [val.firstName, val.lastName].join(" ");
-  let obj = { id: val.id, fullName };
-  return obj;
-});
-console.log(result);
+// //  sort it lowest price
+
+// let sortByLowest = products.sort(function (a, b) {
+//   return a.cost - b.cost; //ascending
+// });
+
+// console.log(sortByLowest);
+
+// // sort by title
+// let sortByTitle = products.sort(function (a, b) {
+//   if (a.title < b.title) return -1;
+//   //   if (a.title > b.title) return 1;
+// });
+// console.log(sortByTitle);
+
+// // filter product less than 8000
+
+// let filtered = products.filter(function (val) {
+//   return val.cost <= 8000;
+// });
+// console.log(filtered);
+
+// // Map it like Android phone - ₹7500
+
+// let final = filtered.map(function (val) {
+//   return val.title + "-₹" + val.cost;
+// });
+// console.log(final);
+
+let final = products
+  .sort(function (a, b) {
+    return a.cost - b.cost; //ascending
+  })
+  .sort(function (a, b) {
+    if (a.title < b.title) return -1;
+    //   if (a.title > b.title) return 1;
+  })
+  .filter(function (val) {
+    return val.cost <= 8000;
+  })
+  .filter(function (val) {
+    return val.cost <= 8000;
+  })
+  .map(function (val) {
+    return val.title + "-₹" + val.cost;
+  });
+
+console.log(final);
