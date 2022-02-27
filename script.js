@@ -628,5 +628,15 @@
 // console.log(obj.getAddress());
 
 // Square of any number
-let a = 5;
-console.log(Math.pow(a, 2));
+// let a = 5;
+// console.log(Math.pow(a, 2));
+
+map();
+
+const numbers = [1, 2, 3, 4, 5];
+console.log(numbers);
+
+let result = numbers.map(function (val) {
+  return val + 2;
+});
+console.log(result);
